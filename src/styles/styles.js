@@ -16,6 +16,7 @@ export const FullScreen = styled.div`
   h1 {
     color: ${props => props.theme.three};
     font-family: 'Rock Salt', 'Questrial', Helvetica Neue, sans-serif;
+    line-height: 1.2em;
     font-weight: 100;
     font-size: 3em;
     text-shadow: 0 0 .3em ${props => props.theme.three};
@@ -47,6 +48,7 @@ export const FullScreen = styled.div`
     align-items: center;
     justify-content: space-around;
     padding: 1em 1em;
+    grid-gap: .5em;
   };
 
   #nav_text {
@@ -205,6 +207,7 @@ export const Projects = styled.section`
 export const About = styled.div`
   z-index: 100;
   max-width: 1000px;
+  width: 80%;
   align-self: center;
   padding: 0 0 2.5em 0;
   animation: ${fade} 1s linear forwards;
@@ -334,6 +337,11 @@ export const Footer = styled.div`
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.3em;
+    width: 80%;
+
+    @media (max-width: 400px) {
+      font-size: .8em;
+    }
   }
 `
 
